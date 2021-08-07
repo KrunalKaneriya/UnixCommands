@@ -1,0 +1,27 @@
+=====Cursor And Movement Commands=====
+
+This Commands Only works in Command Mode
+
+h or (backspace) = it moves one character left.
+
+j = it moves cursor one line down.
+
+k = it moves cursor one line up.
+
+l or (spacebar) = it moves one character right.
+
+[Enter] = it moves the cursor to next beginning line.
+
+$ = it moves the cursor to end of line.
+
+0 or ^ = to move the cursor at beginning of line.
+
+w = to move cursor at beginning of next word or punctuation mark.
+
+b = to move cursor at beginning of previous word or punctuation mark.
+
+e = it moves cursor forward to end of next word or punctuation mark.
+
+G = it moves the cursor to the last line of file.
+
+
