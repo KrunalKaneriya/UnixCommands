@@ -1,0 +1,27 @@
+=====Last Line Commands=====
+
+:wq or :x = it is used to save the current file and quit.
+
+:q = it is used to quit from text editor. When no changes are made.
+
+:w = it is used save the file and to remain in editing mode.
+
+:q! = it quits from editing mode without saving the changes made in file.
+
+:w [file1] = it saves buffer content to file1. Basically it copies the contents to new file. 
+
+:w! [file1] = it saves buffer content to file1. It copies the contents of this file to new file but overrides old contents.
+
+:w>>file1 = it appends the file content to file1.
+
+:[n1],[n2] w file1 = It copies lines from n1 to n2 and saves to file1.
+
+:.w file1 = it writes the current line at cursor to file1. (.) indicates the current line at cursor.
+
+:$w file1 = it writes the last line to file1. ($) indicates the last line of file.
+
+:sh = it temporary exits from vi editor and returns to shell prompt and allows us to enter the commands. Use ctrl + d or type exit to return back to vi editor.
+
+ctrl + z = it suspends current session of vi editor and returns to shell prompt and allows us to enter commands. Use fg to return to current session.
+
+:![cmd] = it is used to insert the cmd of unix without shell prompt. 
