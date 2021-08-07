@@ -1,0 +1,22 @@
+=====Insert Commands=====
+
+i = it goes to insert mode and inserts the text left to cursor. ( it starts editing at cursor only).
+
+I = it goes to insert mode and goes to first line of current line and inserts text left to cursor.
+
+a = it enters in insert mode and appends the text to right of cursor. (if we use a then it will shift cursor to right and starts writing).
+
+o = it enters a blank line in below the cursor and goes to insert mode.
+
+O = it enters a blank line above the cursor and goes to insert mode.
+
+r[ch] =it is used to replace the character from current cursor. It remains in commands mode.
+
+R = it is used to start replacing the all characters and it works like input mode but all text will be replaced.
+
+s = it removes the single character from left of current cursor. we can also specify number of characters to remove like
+4s will remove the 4 characters.
+
+S = it removes the current line of the cursor.
+
+
