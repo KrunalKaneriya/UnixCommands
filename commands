@@ -1,0 +1,76 @@
+=====Insert Commands=====
+
+i = it goes to insert mode and inserts the text left to cursor. ( it starts editing at cursor only).
+
+I = it goes to insert mode and goes to first line of current line and inserts text left to cursor.
+
+a = it enters in insert mode and appends the text to right of cursor. (if we use a then it will shift cursor to right and starts writing).
+
+o = it enters a blank line in below the cursor and goes to insert mode.
+
+O = it enters a blank line above the cursor and goes to insert mode.
+
+r[ch] =it is used to replace the character from current cursor. It remains in commands mode.
+
+R = it is used to start replacing the all characters and it works like input mode but all text will be replaced.
+
+s = it removes the single character from left of current cursor. we can also specify number of characters to remove like
+4s will remove the 4 characters.
+
+S = it removes the current line of the cursor.
+
+=====Last Line Commands=====
+
+:wq or :x = it is used to save the current file and quit.
+
+:q = it is used to quit from text editor. When no changes are made.
+
+:w = it is used save the file and to remain in editing mode.
+
+:q! = it quits from editing mode without saving the changes made in file.
+
+:w [file1] = it saves buffer content to file1. Basically it copies the contents to new file. 
+
+:w! [file1] = it saves buffer content to file1. It copies the contents of this file to new file but overrides old contents.
+
+:w>>file1 = it appends the file content to file1.
+
+:[n1],[n2] w file1 = It copies lines from n1 to n2 and saves to file1.
+
+:.w file1 = it writes the current line at cursor to file1. (.) indicates the current line at cursor.
+
+:$w file1 = it writes the last line to file1. ($) indicates the last line of file.
+
+:sh = it temporary exits from vi editor and returns to shell prompt and allows us to enter the commands. Use ctrl + d or type exit to return back to vi editor.
+
+ctrl + z = it suspends current session of vi editor and returns to shell prompt and allows us to enter commands. Use fg to return to current session.
+
+:![cmd] = it is used to insert the cmd of unix without shell prompt. 
+
+=====Cursor And Movement Commands=====
+
+This Commands Only works in Command Mode
+
+h or (backspace) = it moves one character left.
+
+j = it moves cursor one line down.
+
+k = it moves cursor one line up.
+
+l or (spacebar) = it moves one character right.
+
+[Enter] = it moves the cursor to next beginning line.
+
+$ = it moves the cursor to end of line.
+
+0 or ^ = to move the cursor at beginning of line.
+
+w = to move cursor at beginning of next word or punctuation mark.
+
+b = to move cursor at beginning of previous word or punctuation mark.
+
+e = it moves cursor forward to end of next word or punctuation mark.
+
+G = it moves the cursor to the last line of file.
+
+
