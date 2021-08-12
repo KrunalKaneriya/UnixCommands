@@ -41,7 +41,7 @@ S = it removes the current line of the cursor.
 
 :$w file1 = it writes the last line to file1. ($) indicates the last line of file.
 
-:sh = it temporary exits from vi editor and returns to shell prompt and allows us to enter the commands. Use ctrl + d or type exit to return back to vi editor.
+:sh = it temporary exits from vi editor and returns to shell prompt and allows user to enter the commands. Use ctrl + d or type exit to return back to vi editor.
 
 ctrl + z = it suspends current session of vi editor and returns to shell prompt and allows us to enter commands. Use fg to return to current session.
 
@@ -74,3 +74,70 @@ e = it moves cursor forward to end of next word or punctuation mark.
 G = it moves the cursor to the last line of file.
 
 
+======Page Scrolling Commands=====
+
+ctrl + f = It scrolls full page forward
+
+ctrl + b = It scrolls full page backward
+
+ctrl + d = It scrolls half page forward
+
+ctrl + u = It scrolls half page backward
+
+ctrl + l = It redraws the screen
+
+=====Editing Commands=====
+
+x = It deletes a character under cursor position
+
+X = It deletes previous character under cursor position
+
+dd = It deletes current line under cursor position
+
+J = It joins the current line with next line
+
+d$ or D = it deletes characters from cursor position to end of line
+
+dw = it deletes the word under cursor position. (The word will not be fully deleted. It will be deleted from cursor position to end of word).
+
+d4G or 4dG = it deletes characters from cursor to 4th line. (Not Working)
+
+dfch = it deletes the characters mentioned in 'ch' in first occurences.
+
+d/str = it deletes the characters from cursor position to first occurences of string str in forward direction.
+
+d?str = it deletes the characters from cursor position to first occurences of string str in backward direction.
+ 
+yy or Y = it yanks or copies current line
+
+y$ = it yanks from cursor position to end of line
+
+yw = it yanks current word. (it will start copy from cursor position to end of word. Not the whole word)
+
+y4G or 4yG = it copies characters from cursor to 4th line. 
+
+yfch = it yanks from cursor up to the first occurence of character ch in forward direction
+
+y/str = it yanks the characters from cursor position to first occurences of string str in forward direction.
+
+y?str = it yanks the characters from cursor position to first occurences of string str in backward direction.
+
+p = it puts deleted or copied text to below of line.
+
+P = it puts deleted or copied text to above line
+
+cc = it changes current line and enters in insert mode
+
+c$ or C = it changes characters from cursor to end of line and goes to insert mode
+
+c4G or 4cG = it changes characters from cursor position to 4th line and enters in insert mode
+
+~ = it reverses case of character. If uppercase then it will be lowercase and vice versa
+
+.(dot) = it repeats last editing instruction
+
+u = it undoes last editing instruction
+
+U = it undoes all changes made in current line
+
+Ctrl - r = it redoes previous work (only works in linux)
