@@ -1,0 +1,7 @@
+======Page Scrolling Commands=====
+
+ctrl + f = It scrolls full page forward
+ctrl + b = It scrolls full page backward
+ctrl + d = It scrolls half page forward
+ctrl + u = It scrolls half page backward
+ctrl + l = It redraws the screen
